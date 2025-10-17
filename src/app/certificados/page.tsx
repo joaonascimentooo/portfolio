@@ -51,7 +51,7 @@ export default function CertificadosPage() {
           date: "2024",
           category: "backend",
           credentialId: "UC-XXXXX",
-          image: "/certificates/java-spring.jpg", // Adicione suas imagens aqui
+          image: "/certificates/java-spring.jpg",
           skills: ["Java", "Spring Boot", "REST API", "JPA"],
           description: "Curso completo sobre desenvolvimento de aplicações com Spring Boot, incluindo criação de APIs REST, integração com banco de dados e boas práticas."
         },
@@ -275,7 +275,6 @@ export default function CertificadosPage() {
                 className="rounded-xl border border-gray-700 bg-gray-800/50 overflow-hidden hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
                 onClick={() => setSelectedCert(cert)}
               >
-                {/* Imagem do Certificado */}
                 <div className="relative w-full h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
                   {cert.image ? (
                     <div className="relative w-full h-full">
@@ -291,7 +290,6 @@ export default function CertificadosPage() {
                   )}
                 </div>
 
-                {/* Conteúdo do Card */}
                 <div className="p-6">
                   <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 border ${categoryColors[cert.category]}`}>
                     {tr.categories[cert.category as keyof typeof tr.categories]}
@@ -327,7 +325,6 @@ export default function CertificadosPage() {
           </div>
         )}
 
-        {/* Modal de Detalhes do Certificado */}
         {selectedCert && (
           <div
             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
@@ -348,9 +345,7 @@ export default function CertificadosPage() {
                 </button>
               </div>
 
-              {/* Conteúdo do Modal */}
               <div className="p-6">
-                {/* Imagem do Certificado */}
                 <div className="relative w-full h-96 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl overflow-hidden mb-6 flex items-center justify-center">
                   {selectedCert.image ? (
                     <div className="relative w-full h-full">
@@ -366,7 +361,6 @@ export default function CertificadosPage() {
                   )}
                 </div>
 
-                {/* Informações */}
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <h3 className="text-sm text-gray-400 mb-1">{tr.issuedBy}</h3>
@@ -388,13 +382,11 @@ export default function CertificadosPage() {
                   </div>
                 </div>
 
-                {/* Descrição */}
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-white mb-2">Descrição</h3>
                   <p className="text-gray-300 leading-relaxed">{selectedCert.description}</p>
                 </div>
 
-                {/* Habilidades */}
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-3">{tr.skills}</h3>
                   <div className="flex flex-wrap gap-2">

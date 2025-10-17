@@ -58,39 +58,6 @@ export default function ProjetosPage() {
           github: "https://github.com/joaonascimentooo/WebAnimals",
           color: "purple"
         }
-        // Future projects commented for upcoming updates
-        // {
-        //   id: "ecommerce",
-        //   name: "E-commerce System",
-        //   desc: "Complete e-commerce platform with microservices architecture, payment integration, and AI for recommendations.",
-        //   tags: ["Spring Boot", "React", "Next.js", "PostgreSQL", "Spring AI"],
-        //   github: "https://github.com/joaovictor-novo",
-        //   color: "green"
-        // },
-        // {
-        //   id: "api-restful",
-        //   name: "RESTful API with Spring",
-        //   desc: "Robust API for product and user management with JWT authentication, Swagger documentation, and unit tests.",
-        //   tags: ["Java", "Spring Boot", "MySQL", "JWT", "Swagger"],
-        //   github: "https://github.com/joaovictor-novo",
-        //   color: "orange"
-        // },
-        // {
-        //   id: "dashboard",
-        //   name: "Analytics Dashboard",
-        //   desc: "Interactive dashboard for data visualization with dynamic charts, advanced filters, and report export.",
-        //   tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-        //   github: "https://github.com/joaovictor-novo",
-        //   color: "cyan"
-        // },
-        // {
-        //   id: "ia-recomendacao",
-        //   name: "AI Recommendation System",
-        //   desc: "Intelligent recommendation system using Spring AI and Google Gemini for behavior analysis and personalized suggestions.",
-        //   tags: ["Spring AI", "Google Gemini", "Java", "Machine Learning"],
-        //   github: "https://github.com/joaovictor-novo",
-        //   color: "pink"
-        // }
       ],
       btnLang: "PT",
       ariaLabel: "Mudar para Português"
