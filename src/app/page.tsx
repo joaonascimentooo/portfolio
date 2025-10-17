@@ -163,7 +163,7 @@ export default function Home() {
               {tr.btnPortfolio}
             </Link>
             <a
-              href="mailto:joaovitor.nascimento.dev@gmail.com"
+              href="mailto:contato.joaonascimentob@gmail.com"
               className="rounded-lg border border-gray-700 px-6 py-3 font-semibold text-gray-200 hover:border-gray-500 hover:bg-gray-800/40 transition-colors"
             >
               {tr.btnEmail}
