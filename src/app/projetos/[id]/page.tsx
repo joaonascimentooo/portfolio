@@ -43,7 +43,7 @@ export default function ProjetoDetalhePage() {
           "Análise de comportamento animal"
         ],
         tags: ["React Native", "Python", "OpenCV", "Computer Vision"],
-        github: "https://github.com/joaovictor-novo/web-animals",
+        github: "https://github.com/joaonascimentooo/WebAnimals",
         demo: null,
         video: null,
         screenshots: []
