@@ -26,11 +26,11 @@ export default function Home() {
           accent: "blue",
         },
         {
-          title: "Web Animals",
+          title: "Library Mindxandria",
           description:
-            "WebAnimals é um projeto inovador que visa oferecer uma plataforma interativa para explorar as emoções dos seus bixinhos atráves da tela do seu celular ou qualquer outra câmera",
-          tags: ["React Native", "Python", "OpenCV"],
-          accent: "purple",
+            "Sistema de gerenciamento de biblioteca desenvolvido com Spring Boot, oferecendo controle completo de livros, usuários e empréstimos com arquitetura REST.",
+          tags: ["Java", "Spring Boot", "PostgreSQL"],
+          accent: "green",
         },
       ],
       stackTitle: "Stack & Ferramentas",
@@ -61,11 +61,11 @@ export default function Home() {
           accent: "blue",
         },
         {
-          title: "Web Animals",
+          title: "Library Mindxandria",
           description:
-            "WebAnimals is an innovative project offering an interactive platform to explore your pets' emotions through your phone or any camera.",
-          tags: ["React Native", "Python", "OpenCV"],
-          accent: "purple",
+            "Library management system built with Spring Boot, providing complete control of books, users and loans with REST architecture.",
+          tags: ["Java", "Spring Boot", "PostgreSQL"],
+          accent: "green",
         },
       ],
       stackTitle: "Stack & Tools",

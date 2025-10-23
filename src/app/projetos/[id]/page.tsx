@@ -23,7 +23,7 @@ export default function ProjetoDetalhePage() {
           "Sistema de autenticação seguro"
         ],
         tags: ["Python", "FastAPI", "Spring Boot", "React", "IA"],
-        github: "https://github.com/joaovictor-novo/cacoia",
+        github: "https://github.com/joaonascimentooo/Caco",
         demo: null, // URL da demo se disponível
         video: null, // URL do vídeo (YouTube, Vimeo, etc)
         screenshots: [
@@ -44,6 +44,24 @@ export default function ProjetoDetalhePage() {
         ],
         tags: ["React Native", "Python", "OpenCV", "Computer Vision"],
         github: "https://github.com/joaovictor-novo/web-animals",
+        demo: null,
+        video: null,
+        screenshots: []
+      },
+      "library-mindxandria": {
+        name: "Library Mindxandria",
+        fullDesc: "Sistema completo de gerenciamento de biblioteca desenvolvido com Spring Boot e arquitetura REST. O sistema oferece funcionalidades para controle de livros, cadastro de usuários, gerenciamento de empréstimos e devoluções, com persistência de dados em PostgreSQL. Implementa validações robustas, tratamento de exceções e documentação automática da API.",
+        features: [
+          "CRUD completo de livros e usuários",
+          "Sistema de empréstimos e devoluções",
+          "Validação de dados e regras de negócio",
+          "API RESTful com documentação Swagger",
+          "Persistência com PostgreSQL",
+          "Tratamento de exceções centralizado",
+          "Arquitetura em camadas (Controller, Service, Repository)"
+        ],
+        tags: ["Java", "Spring Boot", "PostgreSQL", "REST API", "Swagger"],
+        github: "https://github.com/joaonascimentooo/LibraryMindxandria",
         demo: null,
         video: null,
         screenshots: []
@@ -129,7 +147,7 @@ export default function ProjetoDetalhePage() {
           "Secure authentication system"
         ],
         tags: ["Python", "FastAPI", "Spring Boot", "React", "AI"],
-        github: "https://github.com/joaovictor-novo/cacoia",
+        github: "https://github.com/joaonascimentooo/Caco",
         demo: null,
         video: null,
         screenshots: []
@@ -146,6 +164,24 @@ export default function ProjetoDetalhePage() {
         ],
         tags: ["React Native", "Python", "OpenCV", "Computer Vision"],
         github: "https://github.com/joaovictor-novo/web-animals",
+        demo: null,
+        video: null,
+        screenshots: []
+      },
+      "library-mindxandria": {
+        name: "Library Mindxandria",
+        fullDesc: "Complete library management system built with Spring Boot and REST architecture. The system offers functionalities for book control, user registration, loan and return management, with PostgreSQL data persistence. Implements robust validations, exception handling, and automatic API documentation.",
+        features: [
+          "Complete CRUD for books and users",
+          "Loan and return system",
+          "Data validation and business rules",
+          "RESTful API with Swagger documentation",
+          "PostgreSQL persistence",
+          "Centralized exception handling",
+          "Layered architecture (Controller, Service, Repository)"
+        ],
+        tags: ["Java", "Spring Boot", "PostgreSQL", "REST API", "Swagger"],
+        github: "https://github.com/joaonascimentooo/LibraryMindxandria",
         demo: null,
         video: null,
         screenshots: []

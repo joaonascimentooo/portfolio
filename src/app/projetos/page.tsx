@@ -30,6 +30,14 @@ export default function ProjetosPage() {
           tags: ["React Native", "Python", "OpenCV", "Computer Vision"],
           github: "https://github.com/joaonascimentooo/WebAnimals",
           color: "purple"
+        },
+        {
+          id: "library-mindxandria",
+          name: "Library Mindxandria",
+          desc: "Sistema de gerenciamento de biblioteca desenvolvido com Spring Boot, oferecendo controle completo de livros, usuários e empréstimos.",
+          tags: ["Java", "Spring Boot", "PostgreSQL", "REST API"],
+          github: "https://github.com/joaonascimentooo/LibraryMindxandria",
+          color: "green"
         }
       ],
       btnLang: "EN",
@@ -57,6 +65,14 @@ export default function ProjetosPage() {
           tags: ["React Native", "Python", "OpenCV", "Computer Vision"],
           github: "https://github.com/joaonascimentooo/WebAnimals",
           color: "purple"
+        },
+        {
+          id: "library-mindxandria",
+          name: "Library Mindxandria",
+          desc: "Library management system built with Spring Boot, providing complete control of books, users and loans.",
+          tags: ["Java", "Spring Boot", "PostgreSQL", "REST API"],
+          github: "https://github.com/joaonascimentooo/LibraryMindxandria",
+          color: "green"
         }
       ],
       btnLang: "PT",
