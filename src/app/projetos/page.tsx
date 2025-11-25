@@ -125,7 +125,7 @@ export default function ProjetosPage() {
           {tr.projects.map((proj, idx) => (
             <div 
               key={proj.name + idx} 
-              className={`rounded-xl border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${colorClasses[proj.color as keyof typeof colorClasses]}`}
+              className={`rounded-xl border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl opacity-60 hover:opacity-100 ${colorClasses[proj.color as keyof typeof colorClasses]}`}
             >
               <h2 className={`text-2xl font-bold mb-3 ${accentColors[proj.color as keyof typeof accentColors]}`}>
                 {proj.name}

@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
+import ScreenshotCarousel from "@/components/ScreenshotCarousel";
 
 export default function ProjetoDetalhePage() {
   const params = useParams();
@@ -64,7 +65,12 @@ export default function ProjetoDetalhePage() {
         github: "https://github.com/joaonascimentooo/LibraryMindxandria",
         demo: null,
         video: null,
-        screenshots: []
+        screenshots: [
+          "/screenshots/library-mindxandria-home.png",
+          "/screenshots/library-mindxandria-upload.png",
+          "/screenshots/library-mindxandria-profile.png",
+          "/screenshots/library-mindxandria-books.png"
+        ]
       },
       "ecommerce": {
         name: "Sistema E-commerce",
@@ -184,7 +190,12 @@ export default function ProjetoDetalhePage() {
         github: "https://github.com/joaonascimentooo/LibraryMindxandria",
         demo: null,
         video: null,
-        screenshots: []
+        screenshots: [
+          "/screenshots/library-mindxandria-home.png",
+          "/screenshots/library-mindxandria-upload.png",
+          "/screenshots/library-mindxandria-profile.png",
+          "/screenshots/library-mindxandria-books.png"
+        ]
       },
       "ecommerce": {
         name: "E-commerce System",
@@ -340,66 +351,68 @@ export default function ProjetoDetalhePage() {
           </div>
         </div>
 
-        {/* Demo Section - Iframe para projetos hospedados */}
-        {project.demo && (
-          <div className="mb-12 rounded-xl overflow-hidden border border-gray-700 bg-gray-900">
-            <div className="p-4 bg-gray-800 border-b border-gray-700">
-              <h3 className="text-lg font-semibold text-white">Live Demo</h3>
+        {/* Media Section - Demo, Video, Screenshots em Grid */}
+        <div className="mb-12 grid gap-6 lg:grid-cols-2">
+          {/* Demo Section */}
+          <div className="rounded-xl overflow-hidden border border-gray-700 bg-gray-900 opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <div className="p-3 bg-gray-800 border-b border-gray-700">
+              <h3 className="text-sm font-semibold text-white">🚀 Live Demo</h3>
             </div>
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src={project.demo}
-                className="absolute top-0 left-0 w-full h-full"
-                title={`${project.name} Demo`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        )}
-
-        {/* Video Section - YouTube, Vimeo, etc */}
-        {project.video && (
-          <div className="mb-12 rounded-xl overflow-hidden border border-purple-700 bg-gray-900">
-            <div className="p-4 bg-purple-900/30 border-b border-purple-700">
-              <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-                🎥 {tr.viewVideo}
-              </h3>
-            </div>
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src={project.video}
-                className="absolute top-0 left-0 w-full h-full"
-                title={`${project.name} Video`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        )}
-
-        {/* Screenshots Gallery */}
-        {project.screenshots && project.screenshots.length > 0 && (
-          <div className="mb-12">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">{tr.gallery}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {project.screenshots.map((screenshot, idx) => (
-                <div 
-                  key={idx} 
-                  className="rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-500 transition-all duration-300 hover:scale-105 cursor-pointer group relative"
-                  style={{ aspectRatio: '16/9' }}
-                >
-                  <Image 
-                    src={screenshot} 
-                    alt={`${project.name} screenshot ${idx + 1}`}
-                    fill
-                    className="object-cover group-hover:opacity-90 transition-opacity"
-                  />
+            {project.demo ? (
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src={project.demo}
+                  className="absolute top-0 left-0 w-full h-full"
+                  title={`${project.name} Demo`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <div className="flex items-center justify-center p-12 text-center" style={{ minHeight: '280px' }}>
+                <div>
+                  <div className="text-5xl mb-3">🚧</div>
+                  <p className="text-gray-400 text-sm">{tr.demoUnavailable}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
           </div>
-        )}
+
+          {/* Video Section */}
+          <div className="rounded-xl overflow-hidden border border-purple-700 bg-gray-900 opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <div className="p-3 bg-purple-900/30 border-b border-purple-700">
+              <h3 className="text-sm font-semibold text-white">🎥 {tr.viewVideo}</h3>
+            </div>
+            {project.video ? (
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src={project.video}
+                  className="absolute top-0 left-0 w-full h-full"
+                  title={`${project.name} Video`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <div className="flex items-center justify-center p-12 text-center" style={{ minHeight: '280px' }}>
+                <div>
+                  <div className="text-5xl mb-3">🎬</div>
+                  <p className="text-gray-400 text-sm">Vídeo em breve</p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Screenshots Gallery */}
+          {project.screenshots && project.screenshots.length > 0 && (
+            <div className="lg:col-span-2">
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-cyan-400">📸 {tr.gallery}</h3>
+              </div>
+              <ScreenshotCarousel screenshots={project.screenshots} projectName={project.name} />
+            </div>
+          )}
+        </div>
 
         {!project.demo && !project.video && (!project.screenshots || project.screenshots.length === 0) && (
           <div className="mb-12 rounded-xl border border-gray-700 bg-gray-800/30 p-12 text-center">
@@ -411,13 +424,13 @@ export default function ProjetoDetalhePage() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Overview */}
-          <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+          <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 opacity-70 hover:opacity-100 transition-opacity duration-300">
             <h2 className="text-2xl font-bold text-blue-400 mb-4">{tr.overview}</h2>
             <p className="text-gray-300 leading-relaxed">{project.fullDesc}</p>
           </div>
 
           {/* Features */}
-          <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6">
+          <div className="bg-gray-800/50 rounded-xl border border-gray-700 p-6 opacity-70 hover:opacity-100 transition-opacity duration-300">
             <h2 className="text-2xl font-bold text-purple-400 mb-4">{tr.features}</h2>
             <ul className="space-y-2">
               {project.features.map((feature, i) => (
