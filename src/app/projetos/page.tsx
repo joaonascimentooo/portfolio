@@ -16,6 +16,14 @@ export default function ProjetosPage() {
       allProjects: "Ver Todos no GitHub",
       projects: [
         {
+          id: "cronicas-do-tempo-perdido",
+          name: "Crônicas do Tempo Perdido",
+          desc: "Aplicação web para criar e gerenciar personagens de histórias com autenticação segura, dashboard, ranking de usuários e armazenamento em tempo real com Firebase.",
+          tags: ["Next.js", "TypeScript", "Firebase", "Autenticação"],
+          github: "https://github.com/joaonascimentooo/CronicasDoTempoPerdido",
+          color: "cyan"
+        },
+        {
           id: "cacoia",
           name: "CacoIA",
           desc: "Aplicação web completa para otimizar e reciclar conteúdo usando Inteligência Artificial, com interface moderna e mascote cativante.",
@@ -50,6 +58,14 @@ export default function ProjetosPage() {
       viewDetails: "View Details",
       allProjects: "View All on GitHub",
       projects: [
+        {
+          id: "cronicas-do-tempo-perdido",
+          name: "Crônicas do Tempo Perdido",
+          desc: "Web application to create and manage story characters with secure authentication, dashboard, user ranking and real-time storage with Firebase.",
+          tags: ["Next.js", "TypeScript", "Firebase", "Authentication"],
+          github: "https://github.com/joaonascimentooo/CronicasDoTempoPerdido",
+          color: "cyan"
+        },
         {
           id: "cacoia",
           name: "CacoIA",

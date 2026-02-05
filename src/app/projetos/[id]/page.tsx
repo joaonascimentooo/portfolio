@@ -13,6 +13,25 @@ export default function ProjetoDetalhePage() {
 
   const projectsData = {
     pt: {
+      "cronicas-do-tempo-perdido": {
+        name: "Crônicas do Tempo Perdido",
+        fullDesc: "Crônicas do Tempo Perdido é uma aplicação web inovadora para criar e gerenciar personagens de histórias com autenticação segura. A plataforma oferece um dashboard completo, sistema de ranking de usuários para incentivar criatividade, e armazenamento de dados em tempo real com Firebase. Construída com Next.js, TypeScript e Firebase, a aplicação oferece uma experiência fluida e responsiva para escritores e entusiastas de histórias.",
+        features: [
+          "Autenticação segura e gerenciamento de usuários",
+          "Criação e edição de personagens com detalhes completos",
+          "Dashboard personalizado para cada usuário",
+          "Sistema de ranking baseado em contribuições",
+          "Armazenamento em tempo real com Firebase",
+          "Interface intuitiva e responsiva",
+          "Sincronização automática de dados",
+          "Temas personalizáveis"
+        ],
+        tags: ["Next.js", "TypeScript", "Firebase", "Autenticação"],
+        github: "https://github.com/joaonascimentooo/CronicasDoTempoPerdido",
+        demo: "https://cronicas-do-tempo-perdido.vercel.app",
+        video: null,
+        screenshots: []
+      },
       cacoia: {
         name: "CacoIA",
         fullDesc: "CacoIA é uma aplicação web completa desenvolvida para otimizar e reciclar conteúdo usando o poder da Inteligência Artificial. O projeto conta com um backend robusto em Spring Boot e FastAPI, frontend moderno em React, e integração com modelos de IA para geração e otimização de conteúdo. O mascote cativante torna a experiência amigável para todas as idades.",
@@ -142,6 +161,25 @@ export default function ProjetoDetalhePage() {
       }
     },
     en: {
+      "cronicas-do-tempo-perdido": {
+        name: "Crônicas do Tempo Perdido",
+        fullDesc: "Crônicas do Tempo Perdido is an innovative web application to create and manage story characters with secure authentication. The platform offers a complete dashboard, user ranking system to encourage creativity, and real-time data storage with Firebase. Built with Next.js, TypeScript, and Firebase, the application delivers a smooth and responsive experience for writers and story enthusiasts.",
+        features: [
+          "Secure authentication and user management",
+          "Character creation and editing with complete details",
+          "Personalized dashboard for each user",
+          "Ranking system based on contributions",
+          "Real-time storage with Firebase",
+          "Intuitive and responsive interface",
+          "Automatic data synchronization",
+          "Customizable themes"
+        ],
+        tags: ["Next.js", "TypeScript", "Firebase", "Authentication"],
+        github: "https://github.com/joaonascimentooo/CronicasDoTempoPerdido",
+        demo: "https://cronicas-do-tempo-perdido.vercel.app",
+        video: null,
+        screenshots: []
+      },
       cacoia: {
         name: "CacoIA",
         fullDesc: "CacoIA is a complete web application developed to optimize and recycle content using the power of Artificial Intelligence. The project features a robust backend in Spring Boot and FastAPI, modern React frontend, and integration with AI models for content generation and optimization. The captivating mascot makes the experience friendly for all ages.",
