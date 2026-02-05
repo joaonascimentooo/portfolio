@@ -19,6 +19,13 @@ export default function Home() {
       viewAll: "Ver todos →",
       projects: [
         {
+          title: "Crônicas do Tempo Perdido",
+          description:
+            "Aplicação web para criar e gerenciar personagens de histórias com autenticação segura, dashboard personalizado, ranking de usuários e armazenamento em tempo real com Firebase.",
+          tags: ["Next.js", "TypeScript", "Firebase"],
+          accent: "blue",
+        },
+        {
           title: "CacoIA: Seu Parceiro Inteligente para Reciclagem de Conteúdo!",
           description:
             "Uma aplicação web completa para otimizar e reciclar seu conteúdo usando o poder da Inteligência Artificial, com uma interface moderna e um mascote cativante para todas as idades.",
@@ -53,6 +60,13 @@ export default function Home() {
       featured: "Featured Projects",
       viewAll: "View all →",
       projects: [
+        {
+          title: "Crônicas do Tempo Perdido",
+          description:
+            "Web application to create and manage story characters with secure authentication, personalized dashboard, user ranking and real-time storage with Firebase.",
+          tags: ["Next.js", "TypeScript", "Firebase"],
+          accent: "blue",
+        },
         {
           title: "CacoIA: Your Smart Partner for Content Recycling!",
           description:

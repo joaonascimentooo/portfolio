@@ -141,8 +141,17 @@ export default function ProjetosPage() {
           {tr.projects.map((proj, idx) => (
             <div 
               key={proj.name + idx} 
-              className={`rounded-xl border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl opacity-60 hover:opacity-100 ${colorClasses[proj.color as keyof typeof colorClasses]}`}
+              className={`rounded-xl border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+                idx === 0 
+                  ? 'lg:col-span-1 md:col-span-2 opacity-100 ring-2 ring-cyan-400 bg-gradient-to-br from-cyan-500/10 to-blue-500/10' 
+                  : `opacity-60 hover:opacity-100 ${colorClasses[proj.color as keyof typeof colorClasses]}`
+              }`}
             >
+              {idx === 0 && (
+                <div className="mb-3 inline-block px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-400 text-xs font-bold text-cyan-300">
+                  ⭐ DESTAQUE
+                </div>
+              )}
               <h2 className={`text-2xl font-bold mb-3 ${accentColors[proj.color as keyof typeof accentColors]}`}>
                 {proj.name}
               </h2>
