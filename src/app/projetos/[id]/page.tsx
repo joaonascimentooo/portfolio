@@ -15,10 +15,10 @@ export default function ProjetoDetalhePage() {
     pt: {
       "cronicas-do-tempo-perdido": {
         name: "Crônicas do Tempo Perdido",
-        fullDesc: "Crônicas do Tempo Perdido é uma aplicação web inovadora para criar e gerenciar personagens de histórias com autenticação segura. A plataforma oferece um dashboard completo, sistema de ranking de usuários para incentivar criatividade, e armazenamento de dados em tempo real com Firebase. Construída com Next.js, TypeScript e Firebase, a aplicação oferece uma experiência fluida e responsiva para escritores e entusiastas de histórias.",
+        fullDesc: "Crônicas do Tempo Perdido é uma aplicação web inovadora desenvolvida inteiramente para um RPG de mesmo nome, permitindo criar e gerenciar diversos personagens fictícios com autenticação segura. A plataforma oferece um dashboard completo, sistema de ranking de usuários para incentivar criatividade, e armazenamento de dados em tempo real com Firebase. Construída com Next.js, TypeScript e Firebase, a aplicação oferece uma experiência fluida e responsiva para jogadores, mestres de jogo e entusiastas do universo Crônicas do Tempo Perdido.",
         features: [
           "Autenticação segura e gerenciamento de usuários",
-          "Criação e edição de personagens com detalhes completos",
+          "Criação e edição de personagens fictícios com detalhes completos",
           "Dashboard personalizado para cada usuário",
           "Sistema de ranking baseado em contribuições",
           "Armazenamento em tempo real com Firebase",
@@ -163,10 +163,10 @@ export default function ProjetoDetalhePage() {
     en: {
       "cronicas-do-tempo-perdido": {
         name: "Crônicas do Tempo Perdido",
-        fullDesc: "Crônicas do Tempo Perdido is an innovative web application to create and manage story characters with secure authentication. The platform offers a complete dashboard, user ranking system to encourage creativity, and real-time data storage with Firebase. Built with Next.js, TypeScript, and Firebase, the application delivers a smooth and responsive experience for writers and story enthusiasts.",
+        fullDesc: "Crônicas do Tempo Perdido is an innovative web application developed entirely for an RPG of the same name, allowing the creation and management of diverse fictional characters with secure authentication. The platform offers a complete dashboard, user ranking system to encourage creativity, and real-time data storage with Firebase. Built with Next.js, TypeScript, and Firebase, the application delivers a smooth and responsive experience for players, game masters, and enthusiasts of the Crônicas do Tempo Perdido universe.",
         features: [
           "Secure authentication and user management",
-          "Character creation and editing with complete details",
+          "Creation and editing of fictional characters with complete details",
           "Personalized dashboard for each user",
           "Ranking system based on contributions",
           "Real-time storage with Firebase",
